@@ -4,12 +4,12 @@ import process from 'node:process';
 
 const path = process.argv[2];
 const toMatch = [
-    'bin',
-    'obj',
-    'packages',
-    'node_modules',
-    'bower_components',
-    '.venv'
+    'bin', // .Net
+    'obj', // .Net
+    'packages',  // Nuget
+    'node_modules', // npm
+    'bower_components', // bower
+    '.venv', //python venv
 ]
 
 async function process(path) {
