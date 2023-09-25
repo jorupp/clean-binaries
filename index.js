@@ -1,8 +1,8 @@
 import { readdir, stat } from 'fs/promises';
 import nodePath from 'path';
-import process from 'node:process';
+import nodeProcess from 'node:process';
 
-const path = process.argv[2];
+const path = nodeProcess.argv[2];
 const toMatch = [
     'bin', // .Net
     'obj', // .Net
@@ -10,6 +10,7 @@ const toMatch = [
     'node_modules', // npm
     'bower_components', // bower
     '.venv', //python venv
+    'registry.terraform.io', // terraform providers
 ]
 
 async function process(path) {
