@@ -11,6 +11,8 @@ const toMatch = [
     'bower_components', // bower
     '.venv', //python venv
     'registry.terraform.io', // terraform providers
+    '.next', //nextjs build output
+    '.sst', // sst build output
 ]
 
 async function process(path) {
