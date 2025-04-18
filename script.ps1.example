@@ -1,0 +1,3 @@
+# node index.js c:\projects >> script.ps1
+# rm -recurse -confirm:$false c:\projects\python-thing\venv
+# will need to add -force to remove folders that start with . (ie. .venv or .vs)
