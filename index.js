@@ -10,9 +10,13 @@ const toMatch = [
     'node_modules', // npm
     'bower_components', // bower
     '.venv', //python venv
+    'venv', //python venv
     'registry.terraform.io', // terraform providers
     '.next', //nextjs build output
     '.sst', // sst build output
+    'cdk.out', // cdk build output
+    '.parcel-cache', // parcel build output
+    '.vs', // visual studio temp files
 ]
 
 async function process(path) {
